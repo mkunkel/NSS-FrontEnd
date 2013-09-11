@@ -21,6 +21,16 @@ header > div {
 #logoimg {
   width: 85px;
 }
+#logoimg img {
+  -webkit-transition: all ease-in-out .5s;
+  -moz-transition: all ease-in-out .5s;
+  -ms-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+}
+#logoimg img:hover {
+  opacity: .5;
+}
 #logotext {
   padding-top: 13px;
 }
