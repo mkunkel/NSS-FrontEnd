@@ -1,0 +1,53 @@
+/* This is a single line comment */
+/*  This
+    Is
+    A
+    Multi-line
+    Comment
+*/
+
+#div1 { /* selecting by id */
+  color: red;
+}
+
+.divs { /* selecting by class */
+  background-color: yellow;
+}
+
+p {  /* selecting by tag */
+  color: green;
+}
+
+/*select by href that is exactly http://www.google.com*/
+a[href="http://www.google.com"] {
+  background-color: red;
+}
+
+/*select by href ending in cnn.com*/
+a[href$="cnn.com"] {
+  background-color: green;
+}
+
+/*select by href that contains yahoo*/
+a[href*="yahoo"] {
+  background-color: blue;
+}
+
+/*select the second span that is direct child of
+  the third li which is a direct child of ul
+  instead, use 2n to select every second span*/
+ul> li:nth-child(3) > span:nth-child(2n){
+  font-size: 25px;
+}
+
+a:hover {
+  background-color: white;
+}
+
+#span2 {
+  background-color: green;
+}
+
+span {
+  background-color: red;
+}

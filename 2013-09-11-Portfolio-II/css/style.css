@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Mouse+Memoirs);
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+
+body {
+  font-family: 'Istok Web', sans-serif;
+  background-color: #6699ff;
+}
+header > div > h1 {
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 50px;
+}
+header > div {
+  float: left;
+  /*border: 1px dashed red;*/
+  width: 200px;
+}
+.clear {
+  float: none;
+  clear: both;
+}
+#logoimg {
+  width: 85px;
+}
+#logotext {
+  padding-top: 13px;
+}
+section > h2 {
+  font-size: 32px;
+}
+section > ul {
+  margin-left: 30px;
+  list-style: inside square;
+}
+section > p {
+  padding: 10px 40px 10px 20px;
+
+  line-height: 19px;
+}
+section > p:nth-of-type(2n){
+  font-style: italic;
+  color: #553300;
+}
+nav{
+  margin-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+a {
+  -webkit-transition: all ease-in-out .7s;
+  -moz-transition: all ease-in-out .7s;
+  -ms-transition: all ease-in-out .7s;
+  -o-transition: all ease-in-out .7s;
+  transition: all ease-in-out .7s;
+  text-decoration: none;
+  background-color: #6666CC;
+}
+a:hover {
+  background-color: #cc6600;
+  font-size: 130%;
+  border-radius: 100%
+}
