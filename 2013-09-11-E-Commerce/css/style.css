@@ -59,6 +59,7 @@ header > #logo{
   padding-bottom: 5px;
   border-top: 2px groove #EEE;
   border-bottom: 2px ridge #222;
+  margin-bottom: 15px;
   /*background-color: #000;*/
   background:#DDD url('../images/gradient.jpg') repeat-x bottom;
   /*background-position: bottom;*/
@@ -136,7 +137,7 @@ section > iframe {
   position: relative;
   display: inline-block;
   width: 210px;
-  height: 300px;
+  height: 260px;
   padding-top: 14px;
   vertical-align: top;
   background-color: #444;
@@ -147,8 +148,13 @@ section > iframe {
 .featureditem > a > img {
   margin-bottom: 10px;
 }
-.featureditem > .blurb > a {
+.featureditem > .blurb {
   font-size: 18px;
+  padding-top: 8px;
+}
+.featureditem > .blurb > p {
+  font-size: 14px;
+
 }
 .blurb > article{
   padding-top: 8px;
@@ -184,17 +190,20 @@ footer {
 dl {
   width: 80%;
   margin: auto;
+  margin-bottom: 70px;
 }
 dl > dt {
   font-weight:500;
-  font-size: 20px;
+  font-size: 19px;
   letter-spacing: 2px;
   text-shadow: 0px 0px 5px #000;
+  margin-bottom: 6px;
+  font-weight: 600;
 }
 dl > dd {
   width: 70%;
   font-size: 16px;
-  margin-left: 15px;
+  margin-left: 25px;
   margin-bottom: 30px;
   line-height: 20px;
 }
@@ -260,7 +269,6 @@ article{
 
 }
 .conhead{
-  text-decoration: underline;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -269,11 +277,11 @@ article{
 }
 
 #addressbig {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 #tellie{
-  font-size: 20px;
+  font-size: 17px;
 }
 #tellie, #addressbig {
   margin-left: 15px;
@@ -281,10 +289,17 @@ article{
 #email{
   color:white;
   font-size: 20px;
+  font-weight: 600;
   text-decoration: underline;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+  transition: all linear .3s;
 }
-#email:hover{
-  color:red;
+#email:hover {
+  color: #000;
+  text-shadow: 0px 0px 5px #FFF
 }
 #submit{
   margin-top: 15px;
@@ -293,3 +308,132 @@ article{
 #catcall{
   margin-left: 200px;
 }
+/*Matt's Stuff*/
+
+header {
+  height: 115px;
+}
+
+p{
+  padding: 10px 0 20px 0;
+  font-family: 'News Cycle', sans-serif;
+}
+#about {
+  width: 70%;
+  margin-left: 50px;
+  margin-bottom: 70px;
+}
+#about p{
+font-family: 'News Cycle', sans-serif;
+background-color: #222;
+color: white;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0.25px;
+margin-bottom: -20px;
+}
+a > div > p, a > div > article {
+  color: white;
+}
+#main {
+  margin-left: 15px;
+}
+
+/*End Matt's First Chunk*/
+
+
+
+/*Selected H2 font weight and size*/
+h2{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: white;
+  text-shadow: 2px 2px 1px #444;
+}
+
+#mainproduct {
+  clear: both;
+  text-align: center;
+  width: 1025px;
+  margin: auto;
+}
+
+#mainproduct div
+{
+  float: left;
+  padding: 20px;
+  max-width: 400px;
+  /*margin-right: 0px;*/
+  /*margin-left: 10px;*/
+  margin-bottom: 20px;
+  background-color: #444;
+  box-shadow: 10px 10px 10px black;
+}
+#middle {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#cart_table {
+  margin: 20px;
+  width: auto;
+}
+
+/*Table for shopping cart page*/
+td {
+  padding: 10px;
+  border: 5px black groove;
+  text-align: right;
+}
+
+.itemcolumn{
+  text-align: left;
+}
+
+table tr:first-child {
+background-image: linear-gradient(bottom, rgb(99,99,99) 30%, rgb(250,247,250) 100%);
+background-image: -o-linear-gradient(bottom, rgb(99,99,99) 30%, rgb(250,247,250) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(99,99,99) 30%, rgb(250,247,250) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(99,99,99) 30%, rgb(250,247,250) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(99,99,99) 30%, rgb(250,247,250) 100%);
+
+background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0.3, rgb(99,99,99)),
+  color-stop(1, rgb(250,247,250))
+);
+}
+
+/*hover adjust for product categories page*/
+
+#mainproduct div:hover, .featureditem:hover{
+    transition: background-color ease-in-out .3s;
+    background-color: #808080;
+    }
+
+/*Matt's Button*/
+
+section button {
+  border: none;
+  background-color: #444;
+  color: white;
+  padding: 5px 10px;
+  margin: 0px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 700;
+  box-shadow: inset 1px 1px 5px #C0C0C0;
+  border-radius: 15px;
+
+}
+
+section button:active
+{
+  background-color: #808080
+  }
