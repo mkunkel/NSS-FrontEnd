@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
 body {
   font-family: 'News Cycle', sans-serif;
+  background-color: #222;
 }
 
 header {
@@ -33,7 +34,7 @@ header {
 a {
   text-decoration: none;
 }
-address {
+#smalladdress {
   float: right;
   clear: right;
   font-size: 13px;
@@ -101,7 +102,6 @@ nav > ul > li:last-child {
 body > section {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #222;
   color: white;
 }
 section > iframe {
@@ -111,38 +111,185 @@ section > iframe {
 }
 #featured {
   width: 730px;
-  height: 300px;
+  /*height: 300px;*/
   margin-left: auto;
   margin-right: auto;
   vertical-align: top;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
+}
+#featurewrap {
+  width: 722px;
+}
+#featurewrap > h2 {
+  width: 699px;
+  background-color: #444;
+  height: 20px;
+  padding: 10px 0 10px 15px;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 550;
 }
 .featureditem {
   text-align: center;
   position: relative;
   display: inline-block;
   width: 210px;
-  height: 100%;
-  padding-top: 10px;
+  height: 300px;
+  padding-top: 14px;
   vertical-align: top;
   background-color: #444;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 4px;
 }
+.featureditem > a > img {
+  margin-bottom: 10px;
+}
+.featureditem > .blurb > a {
+  font-size: 18px;
+}
+.blurb > article{
+  padding-top: 8px;
+}
 footer {
   padding-top: 15px;
-  padding-left: 15px;
+  /*padding-left: 15px;*/
   height: 35px;
   vertical-align: middle;
   border-top: 2px ridge #CCC;
   background:#DDD url('../images/gradient2.jpg') repeat-x bottom;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
 }
 #copyright {
+  position: relative;
+  top: -4px;
+  padding-left: 15px;
   font-size: 14px;
+}
+#copyright > span {
+  font-size: 20px;
+  position: relative;
+  top: 3px;
 }
 #bottomnav {
   margin-right: 15px;
   float: right;
   font-size: 14px;
+}
+dl {
+  width: 80%;
+  margin: auto;
+}
+dl > dt {
+  font-weight:500;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 5px #000;
+}
+dl > dd {
+  width: 70%;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+dd > span {
+  font-size: 28px;
+  position: relative;
+  top: 10px;
+  letter-spacing: 10px;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+
+#indprodimg{
+float:left;
+/*width: 500px;*/
+height: 325px;
+margin-top:15px;
+margin-left: 40px;
+margin-bottom: 15px;
+}
+
+#modelprice{
+  float: left;
+  margin-top: 60px;
+  margin-left: 100px;
+  line-height: 50px;
+}
+#mod{
+  font-size: 30px;
+  font-weight: 400px;
+}
+#price{
+  font-size: 20px;
+  font-weight: 400px;
+  margin-left: 20px;
+}
+#productlist{
+list-style: circle;
+margin-left: 20px;
+}
+#descript{
+  margin-left: 40px;
+  margin-bottom: 70px;
+}
+#descript > article, #descript > ul > li {
+  margin-left: 15px;
+  width: 70%;
+}
+.dh{
+  text-decoration: underline;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+article{
+  margin-bottom: 10px;
+}
+/*style below for contact page********************************************/
+#contacts{
+  float: left;
+  margin-top: 40px;
+  margin-left: 150px;
+
+}
+.conhead{
+  text-decoration: underline;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#contacts > div {
+  margin-bottom: 25px;
+}
+
+#addressbig {
+  font-size: 20px;
+}
+
+#tellie{
+  font-size: 20px;
+}
+#tellie, #addressbig {
+  margin-left: 15px;
+}
+#email{
+  color:white;
+  font-size: 20px;
+  text-decoration: underline;
+}
+#email:hover{
+  color:red;
+}
+#submit{
+  margin-top: 15px;
+}
+
+#catcall{
+  margin-left: 200px;
 }
