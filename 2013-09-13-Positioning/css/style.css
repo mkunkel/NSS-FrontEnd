@@ -1,0 +1,30 @@
+div > section:first-child {
+  position: fixed;
+  right: 15px;
+  top: 20px;
+  background-color: red;
+}
+div > section:nth-child(2) {
+  position: absolute;
+  left: 300px;
+  top: 50px;
+  background-color: green;
+}
+div > span:nth-of-type(2) {
+  position: relative;
+  left: 40px;
+  top: 8px;
+  background-color: blue;
+}
+div > section:nth-child(2) > div {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+  background-color: violet;
+}
+div > section:nth-child(2) > span:nth-of-type(2) {
+  position: relative;
+  right: 20px;
+  top: 10px;
+  background-color: cyan;
+}
