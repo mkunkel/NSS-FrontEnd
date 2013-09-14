@@ -63,10 +63,14 @@ ul li:hover ul {
   position: absolute;
 }
 ul li:hover ul li {
+  width: 100%;
   font-size: 13px;
   clear: left;
   margin-top: 6px;
   margin-left: -25px;
+}
+ul li:hover ul li:hover {
+  background-color: #CCC;
 }
 p {
   font-size: 13px;
