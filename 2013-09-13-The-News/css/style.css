@@ -20,6 +20,15 @@ header {
   height: 90px;
   padding-top: 10px;
 }
+header > .search {
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+header >.search > input {
+  height: 15px;
+  font-size: 12px;
+}
 h1 {
   margin: 0;
   font-family: 'Lobster Two', cursive;
@@ -50,12 +59,13 @@ ul li {
   float: left;
   list-style: none;
   margin-right: 40px;
+  cursor: default;
 }
 ul li ul {
   background-color: rgba(255, 255, 255, .85);
   display: none;
   padding: 0;
-  width: 150px;
+  width: 210px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -64,7 +74,7 @@ ul li:hover ul {
   position: absolute;
 }
 ul li:hover ul li {
-  width: 140px;
+  width: 210px;
   font-size: 13px;
   clear: left;
   margin-top: 6px;
@@ -95,11 +105,10 @@ p {
   width: 270px;
   padding: 0 15px 15px 15px;
 }
-#featured > #headline > h2 {
+#featured > #headline > a > h2 {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 600;
-  margin: 0;
 }
 #featured > #headline > a {
   color: #EEE;
@@ -164,6 +173,9 @@ p {
   z-index: 2;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-shadow: 0 0 3px #000;
 }
 #articles > a > .middle {
   margin: 0 26px;
@@ -193,4 +205,10 @@ footer > span {
   margin-left: 30px;
   font-size: 13px;
   color: #888;
+}
+.left {
+  float:left;
+}
+.right {
+  float: right;
 }
