@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Graduate);
+header {
+  border: 2px dashed #c60b0b; }
+  header #logo {
+    height: 105px;
+    width: 78px;
+    background-image: url("../images/tesla.png"); }
+  header #company h1 {
+    font-family: "Graduate", cursive;
+    margin-top: 35px;
+    margin-left: 50px; }
+  header div {
+    float: left; }
+
+nav {
+  background-color: #2a211c; }
+  nav ul {
+    list-style-type: none;
+    padding-left: 0px; }
+    nav ul li {
+      display: inline-block;
+      padding-right: 50px; }
+
+div#content section h1 {
+  font-size: 20px;
+  color: #c60b0b; }
+div#content section h2 {
+  font-size: 18px;
+  color: #923f3f; }
+div#content section p {
+  font-size: 12px;
+  color: #757575; }
+
+footer p {
+  font-size: 9px;
+  color: #c60b0b; }
+
+a {
+  text-decoration: none;
+  color: #c60b0b; }
+  a:hover {
+    text-decoration: underline;
+    color: #9c3535; }
+
+#main {
+  width: 960px;
+  margin: 0 auto; }
+
+.clear {
+  float: none;
+  clear: both; }
