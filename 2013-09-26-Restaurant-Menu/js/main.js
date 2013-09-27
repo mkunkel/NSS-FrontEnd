@@ -1,9 +1,3 @@
-// debugger;
-// A name
-// Type of item(appetizers, salads, lunch, dinner, dessert, etc)
-// A price
-// Number of calories
-// List of ingredients
 var menuItems = [];
 var categories = [];
 var addAnother = true;
@@ -34,7 +28,6 @@ while(addAnother) {
 }
 
 // BEGIN OUTPUT
-
 // Start with the menu itself
 var x;
 var ingredientList;
@@ -42,12 +35,12 @@ for(i = 0; i < categories.length; i++) {
   console.log(categories[i] + ":");
   for(var item = 0; item < menuItems.length; item++) {
     if (categories[i].toLowerCase() == menuItems[item].category.toLowerCase()) {
-      x = menuItems[item];
+      x = menuItems[item]; // variable x only for shortening later requests for menuItems[item]
       console.log('    ' + x.item + " - " + x.calories + " calories - $" + x.price);
       totalPrice += x.price;
       totalCalories += x.calories;
       ingredientList = "";
-      for(a = 0; a < x.ingredients.length; a++) // build ingredient string
+      for(var a = 0; a < x.ingredients.length; a++) // build ingredient string
         ingredientList += a == 0 ? x.ingredients[a] : ", " + x.ingredients[a]; // include comma if not first element
       console.log('       ' + ingredientList);
     }
@@ -58,13 +51,8 @@ for(i = 0; i < categories.length; i++) {
 // Then output menu totals
 // The number of items on the menu
 console.log("There are " + menuItems.length + " menu items");
-// The number of sections on your menu (appetizer, lunch, dinner, etc)
 console.log("In " + categories.length + " categories");
-// The total calories for all the items on the menu
 console.log("The total calorie count is: " + totalCalories);
-// The total cost of all the items on the menu
 console.log("The total price is: $" + totalPrice);
-// The average cost of an item
 console.log("The average price is: $" + totalPrice / menuItems.length);
-// The average calorie count of an item
 console.log("The average calorie count is: " + totalCalories / menuItems.length);
