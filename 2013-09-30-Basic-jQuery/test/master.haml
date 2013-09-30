@@ -1,8 +1,8 @@
 !!! 5
 %html{lang: 'en'}
   %head
-    %link{rel:"stylesheet", href:"css/normalize.css"}
-    %link{rel:"stylesheet", href:"css/style.css"}
+    %link{rel:"stylesheet", href:"../css/normalize.css"}
+    %link{rel:"stylesheet", href:"../css/qunit.css"}
     %meta{charset: 'utf-8'}
     %title QUnit testing
   %body
@@ -10,6 +10,10 @@
     = Haml::Engine.new(File.read('haml/_nav.haml')).render
     = Haml::Engine.new(File.read('haml/_content.haml')).render
     = Haml::Engine.new(File.read('haml/_footer.haml')).render
-    %script{src:"js/jquery.js"}
-    %script{src:"js/underscore.js"}
-    %script{src:"js/main.js"}
+    #qunit
+    #qunit-fixture
+    %script{src:"../js/jquery.js"}
+    %script{src:"../js/qunit.js"}
+    %script{src:"../js/underscore.js"}
+    %script{src:"../js/main.js"}
+    %script{src:"../js/testing.js"}

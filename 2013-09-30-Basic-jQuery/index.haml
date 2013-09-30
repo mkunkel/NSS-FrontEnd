@@ -10,6 +10,21 @@
     = Haml::Engine.new(File.read('haml/_nav.haml')).render
     = Haml::Engine.new(File.read('haml/_content.haml')).render
     = Haml::Engine.new(File.read('haml/_footer.haml')).render
+    %input#name{type:"text", placeholder:"enter your name"}
+    %input#color{type:"text", placeholder:"enter a color"}
+    %input#clicker{type:"button", value:"press me"}
+    %input#mover{type:"button", value:"rotate"}
+    #container
+      #a Div A
+      #b Div B
+      #c Div C
+      #d Div D
+      #e Div E
+      #f Div F
+
+    %input#age{type:"text", placeholder:"enter an age"}
+    %input#ager{type:"button", value:"Verify Age!"}
+    #age_verification Age Verification
     %script{src:"js/jquery.js"}
     %script{src:"js/underscore.js"}
     %script{src:"js/main.js"}
