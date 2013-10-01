@@ -1,0 +1,16 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    %link{rel:"stylesheet", href:"css/normalize.css"}
+    %link{rel:"stylesheet", href:"css/style.css"}
+    %meta{charset: 'utf-8'}
+    %title QUnit testing
+  %body
+    %input#original{type:'text'}
+    %span ==>
+    %input#piglatin{type:'text', readonly: true}
+    %input#pig{type:'button', value:'Pig!'}
+    #string
+    %script{src:"js/jquery.js"}
+    %script{src:"js/underscore.js"}
+    %script{src:"js/main.js"}

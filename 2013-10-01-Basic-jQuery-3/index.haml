@@ -1,0 +1,30 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    %link{rel:"stylesheet", href:"css/normalize.css"}
+    %link{rel:"stylesheet", href:"css/style.css"}
+    %meta{charset: 'utf-8'}
+    %title Basic jQuery 3
+  %body
+    #a A
+    #b B
+    #c C
+    %p#d.e D
+    %p#e.e E
+    %p#f.e F
+
+    %input#num1{type:'text'}
+    %span#operator.sym +
+    %input#num2{type:'text'}
+    %span.sym =
+    %span#result 0
+    %input#add{type:"button", value:"Compute!"}
+    %p
+
+    %input#plus{type:'button', value:"+"}
+    %input#minus{type:'button', value:"-"}
+    %input#divide{type:'button', value:"/"}
+    %input#multiply{type:'button', value:"*"}
+    %script{src:"js/jquery.js"}
+    %script{src:"js/underscore.js"}
+    %script{src:"js/main.js"}
