@@ -4,13 +4,15 @@
     %link{rel:"stylesheet", href:"css/normalize.css"}
     %link{rel:"stylesheet", href:"css/style.css"}
     %meta{charset: 'utf-8'}
-    %title Roman Numerals
+    %title Photoshop Lite
   %body
-    #container
-      %input#input{type:'text', placeholder:'to convert'}
-      #downarrow |<br>|<br>V
-      %input#output{type:'text', readonly: true}
-      %button#convert Convert<br>Roman<br>Numerals
+    %h1 Photoshop Lite
+    %input#color{type:'text'}
+    %input#addColor{type:'button', value:'Add Color'}
+    %input#addGradient{type:'button', value:'Add gradient'}
+    #brush
+    .clear
+    #colors
     %script{src:"js/jquery.js"}
     %script{src:"js/underscore.js"}
     %script{src:"js/main.js"}

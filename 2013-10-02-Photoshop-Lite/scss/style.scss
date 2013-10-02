@@ -1,0 +1,32 @@
+h1 {
+  margin-top: 5px;
+}
+#colors {
+  width: 495px;
+}
+.colorBox {
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  // border: 2px dashed black;
+  float: left;
+}
+
+#brush {
+  border: 1px dashed black;
+  float: left;
+  margin-left: 10px;
+  position: relative;
+  bottom: 25px;
+  width: 75px;
+  height: 75px;
+}
+input {
+  float: left;
+  margin: 0 5px;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}

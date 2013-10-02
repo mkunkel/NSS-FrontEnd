@@ -1,13 +1,13 @@
 $(document).ready(init);
-function getQuotient(num, divide){
+function getQuotient(num, divide){ // poor name, if given (2013, 1000), returns 2000
   var quotient = 0;
   if (num >= divide)
     quotient = parseInt(num / divide);
   return quotient * divide;
 }
 
-function toString(num, letter, value) {
-  var string = "";
+function toString(num, letter, value) { // returns a string with the number of letters required
+  var string = "";                      // to make the num
   for (i = 0; i < num / value; i++)
     string = string + letter;
   return string;

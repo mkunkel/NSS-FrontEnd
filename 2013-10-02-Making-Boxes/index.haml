@@ -4,13 +4,12 @@
     %link{rel:"stylesheet", href:"css/normalize.css"}
     %link{rel:"stylesheet", href:"css/style.css"}
     %meta{charset: 'utf-8'}
-    %title Roman Numerals
+    %title Making Boxes
   %body
-    #container
-      %input#input{type:'text', placeholder:'to convert'}
-      #downarrow |<br>|<br>V
-      %input#output{type:'text', readonly: true}
-      %button#convert Convert<br>Roman<br>Numerals
+    %h1 Making Boxes
+    %input#amount{type:'text'}
+    %input#button{type:'button', value:'Make Boxes'}
+    #boxes
     %script{src:"js/jquery.js"}
     %script{src:"js/underscore.js"}
     %script{src:"js/main.js"}
