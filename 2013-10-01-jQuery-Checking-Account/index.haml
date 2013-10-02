@@ -1,0 +1,27 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    %link{rel:"stylesheet", href:"css/normalize.css"}
+    %link{rel:"stylesheet", href:"css/style.css"}
+    %meta{charset: 'utf-8'}
+    %title QUnit testing
+  %body
+    #balance
+    %input#amount{type:'text', placeholder:'Enter amount'}
+    %input#deposit{type:'button', value:'Deposit'}
+    %input#withdraw{type:'button', value:"Withdraw"}
+
+    #sheet
+      #header.row
+        .header Transaction #
+        .header Starting Balance
+        .header +/-
+        .header Balance
+      -# .row
+      -#   .sheetitem 1
+      -#   .sheetitem $0.00
+      -#   .sheetitem $1000.00
+      -#   .sheetitem $1000.00
+    %script{src:"js/jquery.js"}
+    %script{src:"js/underscore.js"}
+    %script{src:"js/main.js"}

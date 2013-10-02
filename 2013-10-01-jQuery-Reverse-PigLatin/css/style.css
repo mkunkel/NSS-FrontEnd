@@ -1,0 +1,31 @@
+body {
+  margin: 20px;
+  height: 100%;
+  text-align: center;
+  background-color: #CCCCFF;
+}
+* {
+  border-radius: 5px;
+}
+#container {
+  margin-top: 15%;
+  display: inline-block;
+  width: 200px;
+}
+input{
+  display: block;
+  width: 200px;
+}
+#downarrow {
+  text-align: center;
+  margin: 9px 0;
+}
+
+#convert {
+  position: relative;
+  left: 15px;
+  bottom: 69px;
+  height: 125px;
+  width: 100px;
+  border-radius: 10px;
+}

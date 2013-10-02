@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <meta charset='utf-8'>
+    <title>QUnit testing</title>
+  </head>
+  <body>
+    <div id='balance'></div>
+    <input id='amount' placeholder='Enter amount' type='text'>
+    <input id='deposit' type='button' value='Deposit'>
+    <input id='withdraw' type='button' value='Withdraw'>
+    <div id='sheet'>
+      <div class='row' id='header'>
+        <div class='header'>Transaction #</div>
+        <div class='header'>Starting Balance</div>
+        <div class='header'>+/-</div>
+        <div class='header'>Balance</div>
+      </div>
+    </div>
+    <script src='js/jquery.js'></script>
+    <script src='js/underscore.js'></script>
+    <script src='js/main.js'></script>
+  </body>
+</html>

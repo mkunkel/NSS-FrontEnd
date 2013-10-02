@@ -1,0 +1,27 @@
+.warning {
+  background-color: #FF0000;
+}
+#sheet {
+  width: 960px;
+  margin: 30px auto 0 auto;
+}
+.header {
+  display: inline-block;
+  width: 167px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.sheetitem {
+  display: inline-block;
+  width: 170px;
+  font-size: 11px;
+}
+.row {
+  background-color: #CCCCFF;
+  &:nth-child(2n-1) {
+    background-color: #9999FF;
+  }
+  &.warning {
+    background-color: #FF9999;
+  }
+}

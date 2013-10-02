@@ -1,0 +1,36 @@
+body {
+  margin: 20px;
+  height: 100%;
+  text-align: center;
+  background-color: #CCCCFF;
+}
+* {
+  border-radius: 5px;
+}
+#container {
+  margin-top: 15%;
+  display: inline-block;
+  width: 330px;
+}
+input{
+  // display: inline-block;
+  width: 200px;
+  float: left;
+}
+#downarrow {
+  text-align: center;
+  margin: 9px 0;
+  float: left;
+  // display: inline-block;
+  width: 200px;
+}
+
+#convert {
+  float: left;
+  height: 125px;
+  width: 100px;
+  position: relative;
+  bottom: 100px;
+  left: 15px;
+  border-radius: 10px;
+}
