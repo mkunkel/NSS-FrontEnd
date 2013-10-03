@@ -1,8 +1,19 @@
 h1 {
   margin-top: 5px;
 }
-#colors {
-  width: 495px;
+#boxes {
+  width: 40%;
+  float: left;
+}
+#pixels {
+  width: 750px;
+  float: left;
+}
+.pixel {
+  float: left;
+  width: 5px;
+  height: 5px;
+  background-color: green;
 }
 .colorBox {
   width: 15px;
@@ -11,15 +22,16 @@ h1 {
   // border: 2px dashed black;
   float: left;
 }
-
+#amount {
+  margin-left: 100px;
+}
 #brush {
   border: 1px dashed black;
   float: left;
   margin-left: 10px;
   position: relative;
-  bottom: 25px;
   width: 75px;
-  height: 75px;
+  height: 25px;
 }
 input {
   float: left;
