@@ -1,0 +1,35 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    %link{rel:"stylesheet", href:"css/normalize.css"}
+    %link{rel:"stylesheet", href:"css/style.css"}
+    %meta{charset: 'utf-8'}
+    %title QUnit testing
+  %body
+    %h1 The Geek Bank
+    #logo
+    #logoForm
+      %input#logoUrl{type:'text', placeholder:'Logo URL'}
+      %input#setLogo{type:'button', value:'Set Logo'}
+
+    #balance $0.00
+    #balanceForm
+      %input#newBalance{type:'text', placeholder:'New balance'}
+      %input#setBalance{type:'button', value:'Set Balance'}
+    #transactionForm
+      %input#amount{type:'text', placeholder:'Transaction Amount'}
+      %input#withdraw{type:'button', value:'Withdraw'}
+      %input#deposit{type:'button', value:'Deposit'}
+      #error Transaction entered is not a number
+    .clear
+    #transactionList
+      .row
+        .header Transaction #
+        .header Starting Balance
+        .header Withdrawals
+        .header Deposits
+        .header Current Balance
+        .clear
+    %script{src:"js/jquery.js"}
+    %script{src:"js/underscore.js"}
+    %script{src:"js/main.js"}

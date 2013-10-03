@@ -1,0 +1,62 @@
+body {
+  background-color: #ddf2e9; }
+
+h1 {
+  margin-top: 5px;
+  margin-left: 10px; }
+
+#logo {
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px; }
+
+#logo, #logoForm, #balanceForm, #transactionForm {
+  float: left; }
+
+#logoForm, #balanceForm, #transactionForm {
+  position: relative;
+  left: 40px;
+  top: 20px; }
+
+#balance {
+  float: right;
+  width: 175px;
+  height: 30px;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #6ec8a0;
+  border: 2px solid #1d4d38;
+  color: white;
+  font-weight: bold;
+  font-size: 18px; }
+
+#error {
+  display: none;
+  color: red; }
+
+#transactionList {
+  width: 800px;
+  margin: auto;
+  background-color: #6ec8a0;
+  border: 2px solid #1d4d38; }
+  #transactionList > .row:first-child {
+    background-color: #40a97b;
+    font-weight: bold; }
+  #transactionList > .row:nth-child(2n) {
+    background-color: #a5ddc4; }
+  #transactionList > .row.warning {
+    background-color: #e68c8c; }
+  #transactionList > .row.removal {
+    background-color: yellow; }
+  #transactionList > .row > .info {
+    font-size: 14px; }
+  #transactionList > .row > .info, #transactionList > .row .header {
+    width: 160px;
+    float: left; }
+
+.clear {
+  float: none;
+  clear: both; }

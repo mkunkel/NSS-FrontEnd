@@ -1,0 +1,78 @@
+$color: rgb(110,200,160);
+$warning: rgb(230,140,140);
+body {
+  background-color: lighten($color, 30%);
+}
+h1 {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+#logo {
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px;
+}
+#logo, #logoForm, #balanceForm, #transactionForm {
+  float: left;
+}
+
+#logoForm, #balanceForm, #transactionForm {
+  position: relative;
+  left: 40px;
+  top: 20px;
+}
+
+#balance {
+  float: right;
+  width: 175px;
+  height: 30px;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: $color;
+  border: 2px solid darken($color, 40%);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#error {
+  display: none;
+  color: red;
+}
+
+#transactionList {
+  width: 800px;
+  margin: auto;
+  background-color: $color;
+  border: 2px solid darken($color, 40%);
+  >.row {
+    &:first-child {
+      background-color: darken($color, 15%);
+      font-weight: bold;
+    }
+    &:nth-child(2n) {
+      background-color: lighten($color, 15%);
+    }
+    &.warning {
+      background-color: $warning;
+    }
+    &.removal {
+      background-color: yellow;
+    }
+    >.info {
+      font-size: 14px;
+    }
+    >.info, .header {
+      width: 160px;
+      float: left;
+    }
+  }
+}
+
+.clear {
+  float: none;
+  clear: both;
+}

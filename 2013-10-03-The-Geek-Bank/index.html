@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <meta charset='utf-8'>
+    <title>QUnit testing</title>
+  </head>
+  <body>
+    <h1>The Geek Bank</h1>
+    <div id='logo'></div>
+    <div id='logoForm'>
+      <input id='logoUrl' placeholder='Logo URL' type='text'>
+      <input id='setLogo' type='button' value='Set Logo'>
+    </div>
+    <div id='balance'>$0.00</div>
+    <div id='balanceForm'>
+      <input id='newBalance' placeholder='New balance' type='text'>
+      <input id='setBalance' type='button' value='Set Balance'>
+    </div>
+    <div id='transactionForm'>
+      <input id='amount' placeholder='Transaction Amount' type='text'>
+      <input id='withdraw' type='button' value='Withdraw'>
+      <input id='deposit' type='button' value='Deposit'>
+      <div id='error'>Transaction entered is not a number</div>
+    </div>
+    <div class='clear'></div>
+    <div id='transactionList'>
+      <div class='row'>
+        <div class='header'>Transaction #</div>
+        <div class='header'>Starting Balance</div>
+        <div class='header'>Withdrawals</div>
+        <div class='header'>Deposits</div>
+        <div class='header'>Current Balance</div>
+        <div class='clear'></div>
+      </div>
+    </div>
+    <script src='js/jquery.js'></script>
+    <script src='js/underscore.js'></script>
+    <script src='js/main.js'></script>
+  </body>
+</html>
