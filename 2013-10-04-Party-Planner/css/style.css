@@ -1,0 +1,50 @@
+body {
+  padding-top: 35px; }
+
+table {
+  width: 890px;
+  margin: auto; }
+
+th {
+  font-weight: bold; }
+  th.ctrl {
+    position: relative; }
+    th.ctrl #add {
+      width: 100px;
+      height: 22px;
+      background-color: #9999ff;
+      border: 2px solid #3333ff;
+      border-radius: 0;
+      position: absolute;
+      top: -26px;
+      right: -1px;
+      cursor: pointer; }
+
+th, td {
+  border: 1px solid black; }
+
+.name, .food {
+  width: 250px; }
+
+td.ctrl {
+  width: 266px; }
+  td.ctrl input {
+    width: 175px; }
+    td.ctrl input.rsvp {
+      margin-left: 5px;
+      width: 75px; }
+
+.nuke {
+  background-color: #ff6666;
+  border: 3px solid black; }
+
+td.ctrl {
+  text-align: right; }
+
+.up, .down {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  position: relative;
+  top: 4px;
+  cursor: pointer; }

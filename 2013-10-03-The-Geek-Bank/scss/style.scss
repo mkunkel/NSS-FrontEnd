@@ -36,6 +36,9 @@ h1 {
   color: white;
   font-weight: bold;
   font-size: 18px;
+  &.warning {
+      background-color: $warning;
+  }
 }
 
 #error {
@@ -50,7 +53,7 @@ h1 {
   border: 2px solid darken($color, 40%);
   >.row {
     &:first-child {
-      background-color: darken($color, 15%);
+      background-color: darken($color, 25%);
       font-weight: bold;
     }
     &:nth-child(2n) {

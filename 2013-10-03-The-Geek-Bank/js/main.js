@@ -92,7 +92,10 @@ function addTransaction(startBal, withdraw, deposit, newBal) {
   $('#balance').text('$' + newBal);
 
   if (newBal < 0) {
+    $('#balance').addClass('warning');
     $row.addClass('warning');
+  }else {
+    $('#balance').removeClass('warning');
   }
   if (withdraw.substr(0,1) === 'R' || deposit.substr(0,1) === 'R') {
     $row.addClass('removal');
@@ -131,7 +134,7 @@ function deleteTransaction() {
       deposit = '$' + deposit.toFixed(2);
     }
     addTransaction('$' + currentBalance, withdraw, deposit, balance.toFixed(2));
-    $(this).slideUp();
+    $(this).slideUp(500, 'linear', function() { $(this).remove(); } );
 
   }
 }

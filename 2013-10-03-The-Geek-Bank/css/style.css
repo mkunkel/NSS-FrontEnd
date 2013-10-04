@@ -32,6 +32,8 @@ h1 {
   color: white;
   font-weight: bold;
   font-size: 18px; }
+  #balance.warning {
+    background-color: #e68c8c; }
 
 #error {
   display: none;
@@ -43,7 +45,7 @@ h1 {
   background-color: #6ec8a0;
   border: 2px solid #1d4d38; }
   #transactionList > .row:first-child {
-    background-color: #40a97b;
+    background-color: #328460;
     font-weight: bold; }
   #transactionList > .row:nth-child(2n) {
     background-color: #a5ddc4; }
