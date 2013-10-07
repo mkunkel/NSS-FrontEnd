@@ -3,10 +3,41 @@ $(document).ready(init);
 
 function init() {
   $('#add').click(addTask);
+  $('#color').keypress(isEnter);
+  // $('#due').keyup(addSlash);
   $('table').on('click', '.chk', checked);
   $('table').on('click', '.up, .down', move);
   $('table').on('click', '.removebtn', remove);
   $('input[type=text]:first-of-type').focus();
+}
+
+// function dateHelper(e) {
+//   if (isNaN(String.fromCharCode(e.which)) &&
+//       (e.which !== 104) &&
+//       (e.which !== 46) &&
+//       (e.which !== 9) &&
+//       (e.which !== 116)){
+//     return false;
+//   } else {
+//     setTimeout(addSlash(), 200);
+
+//   }
+// }
+
+// function addSlash(e) {
+//   if (e.which !== 104 ) {
+//     if ($('#due').val().length === 2) {
+//       $('#due').val($('#due').val() + '/');
+//     } else if ($('#due').val().length === 5) {
+//       $('#due').val($('#due').val() + '/');
+//     }
+//   }
+// }
+
+function isEnter(e) {
+  if (e.which === 13) {
+    $('#add').focus();
+  }
 }
 
 function addTask() {
@@ -61,5 +92,10 @@ function move() {
 }
 
 function remove() {
-  $(this).parent().parent().remove();
+  var $row = $(this).parent().parent();
+  $row.find('td')
+  .wrapInner('<div style="display: block;" />')
+  .parent()
+  .find('td > div')
+  .fadeOut(500, function(){$(this).parent().parent().remove();});
 }

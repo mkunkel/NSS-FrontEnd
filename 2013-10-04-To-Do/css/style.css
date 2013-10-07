@@ -11,9 +11,10 @@ h1 {
     height: 20px;
     padding-left: 5px;
     width: 171px; }
-
-input:focus {
-  outline: 0; }
+    #form input[type=text]:focus {
+      outline: 0;
+      background-color: #a5bfcc;
+      border: 2px solid #293e48; }
 
 table {
   width: 638px;
