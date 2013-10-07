@@ -1,0 +1,86 @@
+h1{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#form {
+  text-align: center;
+  input[type=text] {
+    border:2px solid #456879;
+    background-color: lighten(#456879, 50%);
+    border-radius:5px;
+    height: 20px;
+    padding-left: 5px;
+    width: 171px;
+  }
+}
+
+input:focus {
+  outline: 0;
+}
+
+table {
+  width: 638px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+td, th {
+  border: 1px solid black;
+  height: 15px;
+}
+th {
+  &.arrows{
+    width: 65px;
+  }
+  &.done {
+    width: 55px;
+  }
+  &.remove, &.due {
+    width: 85px;
+  }
+  &.color {
+    width: 50px;
+  }
+}
+
+.done {
+  text-align: center;
+  input {
+    margin-top: 3px;
+  }
+}
+
+.arrows {
+  text-align: center;
+  img {
+  width: 20px;
+  height: 20px;
+  margin: 2px 3px 0 3px;
+  }
+}
+
+.color {
+  padding: 0;
+  .colordiv {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.remove {
+  text-align: center;
+  .removebtn {
+    margin: auto;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+.checked {
+  background-color: rgba(30,30,30,.4);
+  .date, .task {
+    text-decoration: line-through;
+  }
+  .color {
+    opacity: .4;
+  }
+}
