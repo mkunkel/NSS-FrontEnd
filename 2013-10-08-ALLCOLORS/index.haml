@@ -10,9 +10,21 @@
   %link{rel: "stylesheet", href: "css/app.css"}
   %script{src: "js/vendor/custom.modernizr.js"}
 %body
+  .row
+    .small-12.columns
+      %h1
+  .row
+    .small-3.columns
+      %input#dimensions{type:'text', autofocus: true, placeholder: "Enter box dimensions"}
+    .small-3.columns
+      %input#speed{type:'text', placeholder: "Enter delay in seconds"}
+    .small-6.columns
+      %input#start.button.small.round.success{type:'button', value:'Start'}
+      %input#stop.button.small.round.alert{type:'button', value:'Stop!'}
+  .row
+    .small-12.columns
+      #colors
   %script{src: 'js/vendor/jquery-1.10.2.js'}
   %script{src: 'js/vendor/foundation.min.js'}
   %script{src: 'js/vendor/underscore.js'}
-  %script{src: 'js/vendor/moment.min.js'}
-  %script{src: 'https://cdn.firebase.com/v0/firebase.js'}
   %script{src: 'js/app/app.js'}

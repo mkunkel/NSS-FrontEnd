@@ -1,0 +1,17 @@
+.photo {
+  float: left;
+  width: 150px;
+  height: 150px;
+  border: 1px dashed #cccccc;
+  margin: 10px;
+  background-size: cover; }
+
+.clear {
+  clear: both;
+  float: none; }
+
+#photo .selected {
+  border: 2px solid red; }
+
+#saved .selected {
+  border: 2px solid green; }

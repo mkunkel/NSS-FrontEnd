@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <title>Inventory System</title>
+  <link href='css/normalize.css' rel='stylesheet'>
+  <link href='css/foundation.css' rel='stylesheet'>
+  <link href='css/app.css' rel='stylesheet'>
+  <script src='js/vendor/custom.modernizr.js'></script>
+</head>
+<body>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <h1>Inventory System</h1>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-2 columns'>
+      <input class='small next' id='person' placeholder='Full Name' type='text'>
+    </div>
+    <div class='small-8 columns'>
+      <input class='small next' id='address' placeholder='Address' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <input class='button small radius next' id='save' type='button' value='Save'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-2 columns'>
+      <input autofocus class='small textbox next' id='name' placeholder='Item Name' type='text'>
+    </div>
+    <div class='small-1 columns'>
+      <input class='small textbox next' id='count' placeholder='#' type='text'>
+    </div>
+    <div class='small-1 columns'>
+      <input class='small textbox next' id='value' placeholder='Value' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <input class='small textbox next' id='room' placeholder='Room' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <input class='small textbox next' id='condition' placeholder='Condition' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <input class='small textbox next' id='date' placeholder='Date' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <input class='small button success radius' id='add' type='button' value='Add'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-3 columns' id='total'>Total Cost:</div>
+    <div class='small-10 columns'></div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <table id='items'>
+        <tr>
+          <th>Name</th>
+          <th>Count</th>
+          <th>Cost</th>
+          <th>Room</th>
+          <th>Condition</th>
+          <th>Purchase Date</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src='js/vendor/jquery-1.10.2.js'></script>
+  <script src='js/vendor/foundation.min.js'></script>
+  <script src='js/vendor/underscore.js'></script>
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <script src='js/app/app.js'></script>
+</body>

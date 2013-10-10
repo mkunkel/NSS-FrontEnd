@@ -10,9 +10,26 @@
   %link{rel: "stylesheet", href: "css/app.css"}
   %script{src: "js/vendor/custom.modernizr.js"}
 %body
+  .row
+    .small-12.columns
+      %h1 Flickr Slideshow
+  .row
+    .small-5.columns
+      .row.collapse
+        .small-8.columns
+          %input#query.small{type: 'text', autofocus: true}
+        .small-4.columns
+          %a#search.button.radius.postfix{href: '#'} Search Flickr
+    .small-7.columns
+
+  .row#imgcontainer
+    .small-12.columns#photo
+
+
+
+
+
   %script{src: 'js/vendor/jquery-1.10.2.js'}
   %script{src: 'js/vendor/foundation.min.js'}
   %script{src: 'js/vendor/underscore.js'}
-  %script{src: 'js/vendor/moment.min.js'}
-  %script{src: 'https://cdn.firebase.com/v0/firebase.js'}
   %script{src: 'js/app/app.js'}

@@ -11,10 +11,30 @@
   <script src='js/vendor/custom.modernizr.js'></script>
 </head>
 <body>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <h1></h1>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-3 columns'>
+      <input autofocus id='dimensions' placeholder='Enter box dimensions' type='text'>
+    </div>
+    <div class='small-3 columns'>
+      <input id='speed' placeholder='Enter delay in seconds' type='text'>
+    </div>
+    <div class='small-6 columns'>
+      <input class='button small round success' id='start' type='button' value='Start'>
+      <input class='button small round alert' id='stop' type='button' value='Stop!'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <div id='colors'></div>
+    </div>
+  </div>
   <script src='js/vendor/jquery-1.10.2.js'></script>
   <script src='js/vendor/foundation.min.js'></script>
   <script src='js/vendor/underscore.js'></script>
-  <script src='js/vendor/moment.min.js'></script>
-  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
   <script src='js/app/app.js'></script>
 </body>

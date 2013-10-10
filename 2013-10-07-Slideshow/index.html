@@ -11,10 +11,29 @@
   <script src='js/vendor/custom.modernizr.js'></script>
 </head>
 <body>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <h1>Flickr Slideshow</h1>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-5 columns'>
+      <div class='row collapse'>
+        <div class='small-8 columns'>
+          <input autofocus class='small' id='query' type='text'>
+        </div>
+        <div class='small-4 columns'>
+          <a class='button radius postfix' href='#' id='search'>Search Flickr</a>
+        </div>
+      </div>
+    </div>
+    <div class='small-7 columns'></div>
+  </div>
+  <div class='row' id='imgcontainer'>
+    <div class='small-12 columns' id='photo'></div>
+  </div>
   <script src='js/vendor/jquery-1.10.2.js'></script>
   <script src='js/vendor/foundation.min.js'></script>
   <script src='js/vendor/underscore.js'></script>
-  <script src='js/vendor/moment.min.js'></script>
-  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
   <script src='js/app/app.js'></script>
 </body>
