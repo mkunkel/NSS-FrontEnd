@@ -1,0 +1,61 @@
+!!! 5
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+%head
+  %meta{charset: "utf-8"}
+  %meta{name: "viewport", content: "width=device-width"}
+  %title Stock Market Tracker
+  %link{rel: "stylesheet", href: "css/normalize.css"}
+  %link{rel: "stylesheet", href: "css/foundation.css"}
+  %link{rel: "stylesheet", href: "css/app.css"}
+  %script{src: "js/vendor/custom.modernizr.js"}
+%body
+  .row
+    .small-12.columns
+      %h1 Stock Market Tracker
+  .row
+    .small-2.columns
+      %input#symbol{type: "text", placeholder: "Symbol"}
+    .small-2.columns
+      %input#quantity{:type => "text", :placeholder => "Shares"}/
+    .small-1.columns
+      %input#buy.button.radius.small{:type => "button", :value => "Buy!"}/
+    .small-2.columns.small-offset-1
+      %label Cash
+      %input#cash{type:'text', value:'$0.00', readonly: true}
+    .small-2.columns
+      %label Stocks
+      %input#stock{type:'text', value:'$0.00', readonly: true}
+    .small-2.columns
+      %label Balance
+      %input#balance{type:'text', value:'$0.00', readonly: true}
+
+  .row
+    .small-3.columns
+      %input#initial{type: 'text', placeholder:'Set Inital Balance', autofocus: true}
+    .small-1.columns
+      %input#setBalance.button.radius.small{type:'button', value:'Set'}
+
+    .small-2.columns.small-offset-5
+      %input#speed{type: 'text', placeholder:'Update Speed'}
+    .small-1.columns
+      %input#setSpeed.button.radius.small{type:'button', value:'Set'}
+  .row
+    .small-11.small-centered.columns
+      %table#stockList
+        %tr
+          %th Symbol
+          %th Name
+          %th Original
+          %th Current
+          %th Purchased
+          %th Total
+
+
+
+  %script{src: 'js/vendor/jquery-1.10.2.js'}
+  %script{src: 'js/vendor/foundation.min.js'}
+  %script{src: 'js/vendor/underscore.js'}
+  %script{src: 'js/vendor/moment.min.js'}
+  %script{src: 'https://cdn.firebase.com/v0/firebase.js'}
+  %script{src: 'js/app/app.js'}

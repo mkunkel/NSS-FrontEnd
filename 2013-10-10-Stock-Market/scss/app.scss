@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+}
+
+input.nsf {
+  background-color: lighten(red, 40%);
+}
+
+.higher {
+  border-left: 2px solid green;
+  background-color: lighten(green, 70%);
+}
+
+.lower {
+  border-left: 2px solid red;
+  background-color: lighten(red, 45%);
+}
