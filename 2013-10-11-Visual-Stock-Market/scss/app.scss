@@ -1,7 +1,6 @@
 .stockColumn {
   height: 300px;
   width: 100px;
-  background-color: blue;
   float: left;
   position: relative;
   &:not(:first-child) {
@@ -12,10 +11,18 @@
 .stock {
   position: absolute;
   bottom: 0px;
+  width: 100px;
+  background-color: blue;
+  label {
+    position: absolute;
+    top: -12px;
+    font-size: 11px;
+  }
   .stockImage {
     width: 100px;
     height: 75px;
     position: absolute;
-    bottom: -200px;
+    background-size: cover;
+    bottom: -75px;
   }
 }
