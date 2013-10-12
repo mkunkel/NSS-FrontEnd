@@ -1,5 +1,5 @@
 .stockColumn {
-  height: 300px;
+  height: 230px;
   width: 100px;
   float: left;
   position: relative;
@@ -12,7 +12,10 @@
   position: absolute;
   bottom: 0px;
   width: 100px;
+  min-height: 5px;
   background-color: blue;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
   label {
     position: absolute;
     top: -12px;
