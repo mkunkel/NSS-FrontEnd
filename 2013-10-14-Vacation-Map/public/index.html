@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <title>Master Template</title>
+  <link href='/css/normalize.css' rel='stylesheet'>
+  <link href='/css/foundation.css' rel='stylesheet'>
+  <link href='/css/app.css' rel='stylesheet'>
+  <script src='/js/vendor/custom.modernizr.js'></script>
+</head>
+<body>
+  <div id='left'>
+    <div id='map-canvas'></div>
+  </div>
+  <div id='right'>
+    <div class='small-12 columns'>
+      <h1>Vacation Map</h1>
+    </div>
+    <div class='row'>
+      <div class='small-7 columns'>
+        <input id='zoom' placeholder='1-18' type='text'>
+      </div>
+      <div class='small-5 columns'>
+        <input class='button tiny radius' id='setZoom' type='button' value='Set Zoom'>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='small-7 columns'>
+        <input id='location' placeholder='Paris' type='text'>
+      </div>
+      <div class='small-5 columns'>
+        <input class='button tiny radius' id='addLocation' type='button' value='Set Location'>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='small-7 columns'>
+        <select id='selectLocation'>
+          <option>Select a location</option>
+        </select>
+      </div>
+      <div class='small-5 columns'>
+        <input class='button tiny radius' id='goLocation' type='button' value='Go To Location'>
+      </div>
+    </div>
+  </div>
+  <script src='/js/vendor/jquery-1.10.2.js'></script>
+  <script src='/js/vendor/foundation.min.js'></script>
+  <script src='/js/vendor/underscore.js'></script>
+  <script src='/js/vendor/moment.min.js'></script>
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCHCzfhjwbFtiKnFJ8-PYUx6I_AeFlTyNA&amp;sensor=true'></script>
+  <script src='/js/app/app.js'></script>
+</body>

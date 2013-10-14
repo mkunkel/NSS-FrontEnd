@@ -1,5 +1,5 @@
 body {
-  background-color: #e5e5ff; }
+  background-color: #b3b3ff; }
 
 h1 {
   font-size: 30px; }
@@ -19,7 +19,9 @@ h1 {
   min-height: 5px;
   background-color: #6666ff;
   border-top-right-radius: 6px;
-  border-top-left-radius: 6px; }
+  border-top-left-radius: 6px;
+  border: 2px solid #DDD;
+  border-bottom: none; }
   .stock label {
     position: absolute;
     top: -12px;
@@ -30,8 +32,11 @@ h1 {
     position: absolute;
     background-size: cover;
     bottom: -75px;
+    left: -2px;
     border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px; }
+    border-bottom-right-radius: 6px;
+    border: 2px solid #DDD;
+    border-top: none; }
 
 .amount {
   font-size: 14px; }

@@ -134,31 +134,31 @@ function flash() {
 }
 
 function updateStocks() {
-  db.funds.cash = db.funds.initial;
+
   db.funds.stock = 0.00;
   for (var i = 0; i < db.stocks.length; i++) {
     var stock = db.stocks[i];
-    updatePrice(stock);
+    updatePrice(stock, i);
   }
 
   // console.log('x);
 }
 
-function updatePrice(stock) {
+function updatePrice(stock, x) {
 
   requestQuote(stock.symbol, function(data, textStatus, jqXHR) {
     data = data.Data;
     for (var i = 0; i < db.stocks.length; i++) {
       if (db.stocks[i].symbol === data.Symbol) {
-        db.stocks[i].price = data.LastPrice + (Math.random() * 50) - 20;
+        db.stocks[i].price = data.LastPrice; // + (Math.random() * 50) - 20;
         //remove Math.random part when stock market is open
 
-        db.funds.cash -= data.LastPrice * db.stocks[i].quantity;
+
         db.funds.stock += data.LastPrice * db.stocks[i].quantity;
         var selector = '#' + db.stocks[i].symbol;
         $(selector).children('.stock').css('height', db.stocks[i].price / 4);
         $(selector).children('.stock').children('label').text(db.stocks[i].symbol + ' - $' + db.stocks[i].price.toFixed(2));
-        if (i === db.stocks.length) {updateFunds();}
+        if (x === db.stocks.length - 1) {setTimeout(updateFunds, 300);}
       }
     }
   });

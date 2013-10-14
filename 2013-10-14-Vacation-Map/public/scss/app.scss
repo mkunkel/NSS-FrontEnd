@@ -1,0 +1,25 @@
+body, html, #map-canvas, #left {
+  height: 100%;
+}
+
+#map-canvas
+{
+  width: 100%;
+  border: 1px solid black;
+}
+
+#left, #right {
+  float: left;
+}
+
+#left {
+  width: 75%;
+}
+
+#right {
+  width: 25%;
+}
+
+input[type=button] {
+  width: 100%;
+}
