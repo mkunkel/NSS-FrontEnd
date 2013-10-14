@@ -1,3 +1,9 @@
+body {
+  background-color: #e5e5ff; }
+
+h1 {
+  font-size: 30px; }
+
 .stockColumn {
   height: 230px;
   width: 100px;
@@ -11,7 +17,7 @@
   bottom: 0px;
   width: 100px;
   min-height: 5px;
-  background-color: blue;
+  background-color: #6666ff;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px; }
   .stock label {
@@ -23,4 +29,18 @@
     height: 75px;
     position: absolute;
     background-size: cover;
-    bottom: -75px; }
+    bottom: -75px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; }
+
+.amount {
+  font-size: 14px; }
+  .amount span {
+    font-weight: bold; }
+
+#initial.disabled {
+  background-color: #cccccc;
+  color: gray; }
+
+.nsf {
+  background-color: #ffb3b3; }

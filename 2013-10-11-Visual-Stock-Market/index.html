@@ -4,13 +4,16 @@
 <head>
   <meta charset='utf-8'>
   <meta content='width=device-width' name='viewport'>
-  <title>Foundation 4</title>
+  <title>Visual Stock Market</title>
   <link href='css/normalize.css' rel='stylesheet'>
   <link href='css/foundation.css' rel='stylesheet'>
   <link href='css/app.css' rel='stylesheet'>
   <script src='js/vendor/custom.modernizr.js'></script>
 </head>
 <body>
+  <div class='row'>
+    <h1>Visual Stock Market</h1>
+  </div>
   <div class='row'>
     <div class='small-2 columns'>
       <input autofocus id='initial' placeholder='Initial Balance' type='text'>
@@ -29,7 +32,19 @@
     </div>
   </div>
   <div class='row'>
-    <div class='small-2 columns small-offset-9'>
+    <div class='small-2 columns amount' id='cashAmt'>
+      <span>Cash:</span>
+      $0.00
+    </div>
+    <div class='small-2 columns amount' id='stockAmt'>
+      <span>Stock:</span>
+      $0.00
+    </div>
+    <div class='small-2 columns amount' id='totalAmt'>
+      <span>Total:</span>
+      $0.00
+    </div>
+    <div class='small-2 columns small-offset-3'>
       <input id='refresh' placeholder='Update Interval' type='text'>
     </div>
     <div class='small-1 columns'>

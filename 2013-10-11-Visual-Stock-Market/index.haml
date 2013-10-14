@@ -4,12 +4,14 @@
 %head
   %meta{charset: "utf-8"}
   %meta{name: "viewport", content: "width=device-width"}
-  %title Foundation 4
+  %title Visual Stock Market
   %link{rel: "stylesheet", href: "css/normalize.css"}
   %link{rel: "stylesheet", href: "css/foundation.css"}
   %link{rel: "stylesheet", href: "css/app.css"}
   %script{src: "js/vendor/custom.modernizr.js"}
 %body
+  .row
+    %h1 Visual Stock Market
   .row
     .small-2.columns
       %input#initial{type:'text', placeholder:'Initial Balance', autofocus: true}
@@ -24,7 +26,16 @@
       %input#buy.button.small.radius{type:'button', value:'Buy'}
 
   .row
-    .small-2.columns.small-offset-9
+    .small-2.columns#cashAmt.amount
+      %span Cash:
+      $0.00
+    .small-2.columns#stockAmt.amount
+      %span Stock:
+      $0.00
+    .small-2.columns#totalAmt.amount
+      %span Total:
+      $0.00
+    .small-2.columns.small-offset-3
       %input#refresh{type:'text', placeholder:'Update Interval'}
     .small-1.columns
       %input#setRefresh.button.small.radius{type:'button', value:'Set'}
