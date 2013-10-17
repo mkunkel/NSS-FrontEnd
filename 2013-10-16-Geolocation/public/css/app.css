@@ -1,0 +1,13 @@
+body, html, #map-canvas {
+  height: 100%;
+  background-color: #4d4d4d; }
+
+#map-canvas {
+  float: left;
+  width: 92%;
+  border: 1px solid black; }
+
+#menu {
+  padding-top: 15px;
+  float: left;
+  width: 8%; }

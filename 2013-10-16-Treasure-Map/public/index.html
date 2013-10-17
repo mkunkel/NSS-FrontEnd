@@ -4,27 +4,37 @@
 <head>
   <meta charset='utf-8'>
   <meta content='width=device-width' name='viewport'>
-  <title>Master Template</title>
+  <title>Treasure Map</title>
   <link href='/css/normalize.css' rel='stylesheet'>
   <link href='/css/foundation.css' rel='stylesheet'>
   <link href='/css/app.css' rel='stylesheet'>
   <script src='/js/vendor/custom.modernizr.js'></script>
-  <script src='/js/tests/keys.js'></script>
-  <link href='/css/qunit-theme-gabe.css' rel='stylesheet'>
+  <script src='/js/app/keys.js'></script>
 </head>
 <body>
-  <div id='qunit'></div>
-  <div id='qunit-fixture'>
-    <!-- #map-canvas -->
+  <div id='map-canvas'></div>
+  <div id='menu'>
+    <div class='row'>
+      <div class='small-12 columns'>
+        <input class='button expand radius small success' id='start' type='button' value='Start'>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='small-12 columns'>
+        <input class='button expand radius small alert' id='stop' type='button' value='Stop'>
+      </div>
+    </div>
+    <div class='row bottom'>
+      <div class='small-12 columns'>
+        <input class='button expand radius tiny alert' id='reset' type='button' value='Reset'>
+      </div>
+    </div>
   </div>
   <script src='/js/vendor/jquery-1.10.2.js'></script>
   <script src='/js/vendor/foundation.min.js'></script>
   <script src='/js/vendor/underscore.js'></script>
   <script src='/js/vendor/moment.min.js'></script>
   <script src='https://cdn.firebase.com/v0/firebase.js'></script>
-  <!-- %script{src: 'https://maps.googleapis.com/maps/api/js?key=__________&sensor=true'} -->
+  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCHCzfhjwbFtiKnFJ8-PYUx6I_AeFlTyNA&amp;sensor=true'></script>
   <script src='/js/app/app.js'></script>
-  <script src='/js/vendor/jquery.domchanged.js'></script>
-  <script src='/js/vendor/qunit-1.12.0.js'></script>
-  <script src='/js/tests/master.js'></script>
 </body>
