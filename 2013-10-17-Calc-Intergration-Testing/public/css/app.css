@@ -1,0 +1,14 @@
+body {
+  margin-top: 15px; }
+
+.spacer {
+  height: 25px; }
+
+span {
+  margin-right: 5px; }
+
+li {
+  list-style-type: none;
+  background-color: white; }
+  li:nth-child(2n) {
+    background-color: red; }

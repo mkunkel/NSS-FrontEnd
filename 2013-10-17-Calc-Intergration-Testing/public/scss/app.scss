@@ -1,0 +1,30 @@
+// #map-canvas
+// {
+//   height: 250px;
+//   width: 250px;
+//   border: 1px solid black;
+// }
+
+body {
+  margin-top: 15px;
+}
+
+.spacer {
+  height: 25px;
+}
+
+span{
+  margin-right: 5px;
+}
+
+li {
+  list-style-type: none;
+  background-color: rgb(255,255,255);
+  &:nth-child(2n) {
+    background-color: rgb(255,0,0);
+  }
+}
+
+#history span {
+  // float: left;
+}
