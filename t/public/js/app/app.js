@@ -7,7 +7,9 @@
 
 // $(document).ready(initialize);
 
-// function initialize(){
+// function initialize(fn, flag){
+//   if(!canRun(flag)) {return;}
+
 //   $(document).foundation();
 //   Δdb = new Firebase(db.keys.firebase);
 //   initMap(36, -86, 5);
@@ -53,3 +55,10 @@
 // // -------------------------------------------------------------------- //
 // // -------------------------------------------------------------------- //
 // // -------------------------------------------------------------------- //
+
+// function canRun(flag){
+//   var isQunit = $('#qunit').length > 0;
+//   var isFlag = flag !== undefined;
+//   var value = isQunit && isFlag || !isQunit;
+//   return value;
+// }

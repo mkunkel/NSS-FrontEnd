@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <title>Master Template</title>
+  <link href='/css/normalize.css' rel='stylesheet'>
+  <link href='/css/foundation.css' rel='stylesheet'>
+  <link href='/css/app.css' rel='stylesheet'>
+  <script src='/js/vendor/custom.modernizr.js'></script>
+  <script src='/js/app/keys.js'></script>
+</head>
+<body>
+  <div class='row'>
+    <div class='small-2 columns'>
+      <input id='school' placeholder='School' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <input id='length' placeholder='Length' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <input id='width' placeholder='Width' type='text'>
+    </div>
+    <div class='small-6 columns'>
+      <input class='button small radius' id='addSchool' type='button' value='Add School'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-2 columns'>
+      <input id='student' placeholder='Student' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <input id='gpa' placeholder='4.0' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <select id='pickSchool'></select>
+    </div>
+    <div class='small-6 columns'>
+      <input class='button small radius' id='addStudent' type='button' value='Add Student'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-2 columns'>
+      <input id='subject' placeholder='Subject' type='text'>
+    </div>
+    <div class='small-2 columns'>
+      <select id='pickStudent'></select>
+    </div>
+    <div class='small-6 columns small-offset-2'>
+      <input class='button small radius' id='addSubject' type='button' value='Add Subject'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <ul id='schools'></ul>
+    </div>
+  </div>
+  <script src='/js/vendor/jquery-1.10.2.js'></script>
+  <script src='/js/vendor/foundation.min.js'></script>
+  <script src='/js/vendor/underscore.js'></script>
+  <script src='/js/vendor/moment.min.js'></script>
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <!-- %script{src: 'https://maps.googleapis.com/maps/api/js?key=__________&sensor=true'} -->
+  <script src='/js/app/app.js'></script>
+</body>
