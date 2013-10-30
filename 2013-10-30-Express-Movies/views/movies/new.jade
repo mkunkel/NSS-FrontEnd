@@ -1,0 +1,24 @@
+extends ../template/layout
+include ../mixins/form-helper.jade
+
+block content
+  .row
+    .small-12.columns
+      h1 New Movie
+  .row
+    .small-2.columns
+      a.button.tiny.radius.expand(href= '/') Home
+    .small-2.columns
+      a.button.tiny.radius.expand(href= '/movies') Movies
+    .small-8.columns
+  .row
+    .small-12.columns
+      form(action='/movies', method='POST')
+        mixin field('title', 'Title', 'Jaws', true)
+        mixin field('image', 'Image', 'http://www.domain.com/image.jpg')
+        mixin field('color', 'Color', 'blue')
+        mixin field('rated', 'Rating', 'PG13')
+        mixin field('studio', 'Studio', 'Universal Studios')
+        mixin field('gross', 'Gross', '3000000')
+        mixin field('numTheatres', '# of Theatres', '234')
+        button.button.radius.tiny(type= 'submit') Submit

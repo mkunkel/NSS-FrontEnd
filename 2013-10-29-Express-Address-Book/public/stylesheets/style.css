@@ -1,0 +1,41 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+a:not(:nth-of-type(1)) {
+  margin-left: 10px
+}
+
+#people {
+  width: 60%;
+  margin: auto;
+  border-spacing: 0 3px;
+}
+
+#people tr:nth-child(2n), #people thead {
+  background-color: #DDD;
+}
+
+form, button {
+  margin-top: 20px;
+}
+
+button {
+  width: 154px;
+  margin-left: 70px;
+}
+
+input {
+  display: block;
+  width: 150px;
+}
+
+label {
+  float: left;
+  width: 70px;
+}

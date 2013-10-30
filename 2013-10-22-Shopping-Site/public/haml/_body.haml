@@ -1,3 +1,4 @@
+
 .row
   .small-2.columns
     %input#productName{type:'text', placeholder:'Name'}
@@ -22,3 +23,59 @@
         %th % Off
         %th Weight
         %th Sale
+    #previous.hidden.button.small.radius
+    #next.hidden.button.small.radius
+.row
+  .small-12.columns
+    %input#customerName{type:'text', placeholder:'Bob'}
+    %input#customerImage{type:'text', placeholder:'bob.jpg'}
+    %input#domestic{type:'radio', name:'address', value:'domestic'} Domestic
+    %input#international{type:'radio', name:'address', value:'international'} International
+    %input#addCustomer{type:'button', value:'Add Customer'}
+.row
+  .small-12.columns
+    %select#selectCustomer
+      %option{value:'default'}
+    %input#purchase{type:'button', value:'Purchase'}
+.row
+  .small-12.columns
+    %table#cart
+      %thead
+        %tr
+          %th Name
+          %th Count
+          %th Amount
+          %th Weight
+          %th Shipping
+          %th Total
+      %tbody
+      %tfoot
+        %tr
+          %td
+          %td#cartCount
+          %td#cartAmount
+          %td#cartWeight
+          %td#cartShipping
+          %td#cartTotal
+.row
+  .small-12.columns
+    %table#orders
+      %thead
+        %tr
+          %th ID
+          %th Time
+          %th Customer
+          %th Products
+          %th Subtotal
+          %th Shipping
+          %th Total
+      %tbody
+      %tfoot
+        %tr
+          %td
+          %td
+          %td
+          %td
+          %td
+          %td
+          %td $0.00

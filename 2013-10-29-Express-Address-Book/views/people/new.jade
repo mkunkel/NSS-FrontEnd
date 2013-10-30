@@ -1,0 +1,13 @@
+extends ../template/layout
+include ../mixins/form-helper.jade
+
+block content
+  h1 Address Book
+  a(href='../') Home
+  a(href='../people') People
+  form(action='/people', method='POST')
+    mixin field('name', 'Name', 'Bob', true)
+    mixin field('gender', 'Gender', 'm')
+    mixin field('age', 'Age', '30')
+    mixin field('color', 'Color', '#FF33CC')
+    button(type='submit') Add New Person

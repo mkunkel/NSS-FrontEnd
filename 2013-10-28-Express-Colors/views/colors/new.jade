@@ -1,0 +1,8 @@
+extends ../template/layout
+
+block content
+  h1 Colors page
+  form(action= '/colors', method= 'POST')
+    label(for= 'POST-name') Color:
+    input(id= 'POST-name', type= 'text', name= 'color', autofocus='true', placeholder='#FF0000')
+    button(type= 'submit') Submit

@@ -1,0 +1,4 @@
+mixin field(name, label, placeholder, autofocus)
+  .field
+    label(for= name) #{label}:
+    input(type='text', name= name, placeholder= placeholder, autofocus= autofocus)

@@ -1,0 +1,14 @@
+extends ../template/layout
+include ../mixins/form-helper.jade
+
+block content
+  h1 To Do
+  a(href='/') Home
+  a(href='/list') List
+
+  form(action='/list', method="POST")
+    mixin field('task', 'Task', true)
+    mixin field('due', 'Due')
+    mixin field('color', 'Color')
+
+    button(type='submit') Submit

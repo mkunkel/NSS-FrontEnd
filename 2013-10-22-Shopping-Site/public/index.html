@@ -44,6 +44,81 @@
           <th>Sale</th>
         </tr>
       </table>
+      <div class='hidden button small radius' id='previous'></div>
+      <div class='hidden button small radius' id='next'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <input id='customerName' placeholder='Bob' type='text'>
+      <input id='customerImage' placeholder='bob.jpg' type='text'>
+      <input id='domestic' name='address' type='radio' value='domestic'>Domestic</input>
+      <input id='international' name='address' type='radio' value='international'>International</input>
+      <input id='addCustomer' type='button' value='Add Customer'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <select id='selectCustomer'>
+        <option value='default'></option>
+      </select>
+      <input id='purchase' type='button' value='Purchase'>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <table id='cart'>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Count</th>
+            <th>Amount</th>
+            <th>Weight</th>
+            <th>Shipping</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td id='cartCount'></td>
+            <td id='cartAmount'></td>
+            <td id='cartWeight'></td>
+            <td id='cartShipping'></td>
+            <td id='cartTotal'></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='small-12 columns'>
+      <table id='orders'>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Time</th>
+            <th>Customer</th>
+            <th>Products</th>
+            <th>Subtotal</th>
+            <th>Shipping</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>$0.00</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
   </div>
   <script src='/js/vendor/jquery-1.10.2.js'></script>

@@ -12,5 +12,7 @@
 
   = Haml::Engine.new(File.read('public/haml/_scripts.haml')).render
   %script{src: '/js/vendor/jquery.domchanged.js'}
+
   %script{src: '/js/vendor/qunit-1.12.0.js'}
+  %script{src: '/js/tests/close.js'}
   %script{src: '/js/tests/master.js'}

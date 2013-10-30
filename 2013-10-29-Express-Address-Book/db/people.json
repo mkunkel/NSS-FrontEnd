@@ -1,0 +1,7 @@
+[{"name":"Bob", "gender":"m","age":30,"color":"#ff33cc"},
+{"name":"Sarah", "gender":"f" ,"age":22,"color":"#ff9999"},
+{"name":"Jim", "gender":"m","age":38, "color":"#555235"},
+{"name":"mike","gender":"m","age":"30","color":"red"},
+{"name":"mike","gender":"m","age":"30","color":"red"},
+{"name":"mike","gender":"m","age":"30","color":"green"},
+{"name":"mike","gender":"m","age":"30","color":"orange"}]

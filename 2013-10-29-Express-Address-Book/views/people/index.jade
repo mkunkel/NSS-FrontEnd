@@ -1,0 +1,23 @@
+extends ../template/layout
+
+block content
+  h1 Address Book
+  a(href='../') Home
+  a(href='/people/new') New
+  h3= people.length
+  table#people
+    thead
+      tr
+        th Name
+        th Gender
+        th Age
+        th Color
+    tbody
+      each person, index in people
+        tr(style= 'background-color:#{person.color}', id=person.name)
+          each value, property in person
+            td(class= property)= value
+          //- td= person.name
+          //- td= person.gender
+          //- td= person.age
+          //- td(style= 'background-color:#{person.color}')

@@ -3,3 +3,6 @@
   #products .productImage img {
     max-width: 200px;
     max-height: 150px; }
+
+.hidden {
+  visibility: hidden; }

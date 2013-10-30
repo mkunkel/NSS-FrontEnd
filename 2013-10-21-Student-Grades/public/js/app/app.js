@@ -39,14 +39,12 @@ function clickAddStudent() {
 function clickAddSubject() {
   var studentName = $('#pickStudent').val();
   var subject = getValue('#subject');
-  var school = _.find(schools, function(school) {
-    return _.find(school.students, function(student) {
+  var school = _.find(schools, function(s) {
+    return _.find(s.students, function(student) {
       return student.name === studentName;
     });
   });
-  var student = _.find(school.students, function(s) {
-      return s.name === studentName;
-    });
+  var student = _.find(school.students, function(s) {return s.name === studentName;});
   student.subjects.push(subject);
 }
 

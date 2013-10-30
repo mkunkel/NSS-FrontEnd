@@ -1,0 +1,18 @@
+extends ../template/layout
+
+block content
+  h1 To Do
+  a(href='/') Home
+  a(href='/list/new') New
+  #container
+    table
+      thead
+        if actions[0]
+          tr
+            each value, property in actions[0]
+
+              th= strings.upper(property)
+          each action in actions
+            tr(style= 'background-color: #{action.color}')
+              each value, property in action
+                td(class= property)= value
