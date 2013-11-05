@@ -1,0 +1,37 @@
+extends ../template/layout
+
+block content
+  .row
+    .small-12.columns
+      h1 Posts
+  .row
+    .small-2.columns
+      a.button.tiny.radius.expand(href= '/') Home
+    .small-2.columns
+      a.button.tiny.radius.expand(href= '/posts') Posts
+    .small-2.columns
+      a.button.tiny.radius.expand.success(href= '/posts/new') New Post
+    .small-6.columns
+  .row
+    .small-12.columns
+      #posts
+        .post
+          .postHead
+            div
+              span.title= post.title
+            span.author= post.author
+            span.date= post.date
+            p.tags= post.tags
+          img(src= post.image, onerror='this.style.display="none";')
+          p.content= post.content
+          form(action='/posts/' + post.id, method='POST')
+            input(type='hidden', name='_method', value='DELETE')
+            button.tiny.radius.alert.delete(type='submit') delete
+          .clear
+
+//- title: String,
+//- author: String,
+//- date: String,
+//- tags: String,
+//- image: String,
+//- content: String

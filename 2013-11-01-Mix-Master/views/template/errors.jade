@@ -1,0 +1,8 @@
+.row
+  .small-12.columns
+    if (errors)
+      error
+      each error in errors
+        ol
+          -error.message = error.message
+          li= error.message

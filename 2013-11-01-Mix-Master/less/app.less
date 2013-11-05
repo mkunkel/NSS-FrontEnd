@@ -1,0 +1,116 @@
+@base: #fff;
+@import url(http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+
+body{
+  background-color: @base;
+}
+
+#headerContainer {
+  height: 100px;
+  position: relative;
+  border-bottom: 3px ridge #CCC;
+  background-color: #EEE;
+  margin-bottom: 20px;
+  h3 {
+    margin: 0;
+    margin-left: 8px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 45px;
+    padding: 0;
+    color: #333;
+  }
+  #menuBar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        font-family: sans-serif;
+        font-size: 13px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: inline;
+        &:hover {
+          background-color: #CCC;
+        }
+        &:not(:first-child) {
+          border-left: 3px groove white;
+        }
+      }
+      a {
+        color: #222;
+      }
+    }
+  }
+
+}
+
+fieldset {
+  border-radius: 10px;
+  background-color: #eee;
+  padding-bottom: 0;
+  legend {
+    background-color: transparent;
+  }
+  #lyrics, #bio {
+    height: 200px;
+  }
+}
+
+#songs{
+  width: 100%;
+  margin: auto;
+  .title {
+    width: 30%;
+  }
+  .duration {
+    width: 10%;
+  }
+  .genres {
+    width: 25%;
+  }
+  th.createdAt {
+    width: 25%;
+  }
+  td.createdAt{
+    width: 25%;
+    font-size: 10px;
+  }
+  // .last {
+  //   width: 15%;
+  // }
+
+  .song {
+    td {
+      height: 20px ;
+      padding: 0;
+    }
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.play {
+  .img, .player {
+    display: inline-block;
+    float: left;
+    width: 50%;
+  }
+  img {
+    max-height: 400px;
+    width: auto;
+  }
+  .lyrics{
+    white-space: pre;
+  }
+}
+
+.moveDown {
+  position: relative;
+  top: 1px;
+}

@@ -1,0 +1,33 @@
+extends ../template/layout
+
+block content
+  .row
+    .small-12.columns
+      table#songs
+        thead
+          tr
+            th.title Title
+            th.duration Duration
+            th.genres Genres
+            th.createdAt Date Added
+            th.last
+        each song in songs
+          tr.song
+            td.title= song.title
+            td.duration= song.duration
+            td.genres
+              ul
+              each genre in song.genres
+                li= genre
+            td.createdAt= song.createdAt
+            td.last
+              a.button.tiny.success.radius(href= '/songs/#{song.id}') View Song Page
+          tr.collapse.play
+            td(colspan= 5)
+              .img
+                img(src= song.art)
+              .player
+                audio(controls= "controls", type= 'audio/mp3')
+                  source(src= 'audios/' + song.filename)
+                .lyrics= song.lyrics
+              .clear

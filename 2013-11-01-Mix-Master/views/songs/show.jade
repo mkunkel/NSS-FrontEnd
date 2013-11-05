@@ -1,0 +1,33 @@
+extends ../template/layout
+
+block content
+  .row
+    .small-12.columns
+      table#songs
+        thead
+          tr
+            th Title
+            th Duration
+            th Genres
+            th
+        tr.song.only
+          td.title= song.title
+          td.duration= song.duration
+          td.genres
+            ul
+            each genre in song.genres
+              li= genre.name
+          td
+            form(action= '/songs/' + song.id, method= "POST")
+              input(type= 'hidden', name='_method', value= 'DELETE')
+              a.button.tiny.radius.moveDown(href='/songs/#{song.id}/edit') Edit Song
+              button.tiny.alert.radius(type= 'submit') Delete
+        tr.play
+          td(colspan= 4)
+            .img
+              img(src= song.art)
+            .player
+              audio(controls= "controls", type= 'audio/mp3')
+                source(src= '/audios/' + song.filename)
+              .lyrics= song.lyrics
+            .clear

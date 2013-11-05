@@ -1,0 +1,66 @@
+@base: #ffffff;
+
+body{
+  background-color: @base;
+}
+
+h1 {
+  color: #333;
+}
+
+#content {
+  height: 220px;
+}
+
+#posts {
+  padding-top: 10px;
+}
+
+.post {
+  width: 100%;
+  margin: auto;
+  border: 1px solid #CCC;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  .postHead {
+    border-radius: 6px 6px 0 0;
+    // position: relative;
+    // bottom: 4px;
+    margin-top: 0;
+    background-color: #EEE;
+    padding-left: 5px;
+    span {
+      font-size: 13px;
+      &.title {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 25px;
+      }
+      &.author {
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+    }
+    .tags {
+      margin-left: 5px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+  form, .delete {
+    float: right;
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+
+  p.content, img{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+}
+
+.clear {
+  clear: both;
+}

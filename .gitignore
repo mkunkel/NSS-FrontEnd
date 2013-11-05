@@ -1,3 +1,6 @@
 .sass_cache/
 node_modules/
 _build/
+audios/
+videos/
+*.mp3
