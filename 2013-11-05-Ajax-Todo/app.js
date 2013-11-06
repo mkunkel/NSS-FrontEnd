@@ -1,13 +1,11 @@
-// initialize models
-require('./models/genre');
-require('./models/song');
-require('./models/artist');
+// models
+require('./models/priority');
+require('./models/todo');
 
 // express application
 var home = require('./routes/home');
-var songs = require('./routes/songs');
-var artists = require('./routes/artists');
-var genres = require('./routes/genres');
+var todos = require('./routes/todos');
+var priorities = require('./routes/priorities');
 
 // modules
 var express = require('express');
@@ -15,9 +13,8 @@ var http = require('http');
 var path = require('path');
 var less = require('express-less');
 var mongoose = require('mongoose');
-var _ = require('lodash');
 var app = express();
-mongoose.connect('mongodb://localhost/mixmaster');
+mongoose.connect('mongodb://localhost/ajaxtodo');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -38,23 +35,11 @@ if ('development' == app.get('env')) {
 
 // route definitions
 app.get('/', home.index);
-app.get('/songs', songs.index);
-app.get('/songs/new', songs.new);
-app.post('/songs', songs.create);
-app.get('/songs/:id', songs.show);
-app.get('/songs/:id/edit', songs.edit);
-app.put('/songs/:id', songs.update);
-app.delete('/songs/:id', songs.delete);
-
-app.get('/artists', artists.index);
-app.get('/artists/new', artists.new);
-app.post('/artists', artists.create);
-
-app.get('/genres', genres.index);
-app.get('/genres/new', genres.new);
-app.post('/genres', genres.create);
-app.get('/genres/:id/edit', genres.edit);
-app.put('/genres/:id', genres.update);
+app.get('/todos', todos.index);
+app.post('/todos', todos.create);
+app.delete('/todos/:id', todos.delete);
+app.put('/todos/:id', todos.update);
+app.post('/priorities', priorities.create);
 
 // start server
 http.createServer(app).listen(app.get('port'), function(){

@@ -9,7 +9,7 @@
     "express": "*",
     "jade": "*",
     "express-less": "*",
-    "lodash": "~2.2.1",
+    "lodash": "*",
     "moment": "*",
     "mongoose": "*"
   }

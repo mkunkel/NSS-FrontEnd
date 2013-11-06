@@ -1,0 +1,39 @@
+@base: #ffffff;
+
+body{
+  background-color: @base;
+}
+
+select {
+  position: relative;
+  top: 17px;
+  font-size: 14px;
+  height: 31px;
+}
+
+fieldset {
+  border: 2px solid desaturate(lighten(blue, 20%), 90%);
+  border-radius: 10px;
+  background-color: desaturate(lighten(blue, 40%), 50%);
+  legend {
+    background-color: transparent;
+  }
+  input[type=text], input[type=text]:focus, select {
+    border-radius: 5px;
+    border: 2px solid desaturate(lighten(blue, 25%), 90%);
+    background-color: desaturate(lighten(blue, 45%), 70%);
+    color: desaturate(darken(blue, 15%), 70%);
+  }
+
+}
+
+#todos {
+  width: 100%;
+  .completed {
+    text-decoration: line-through;
+  }
+  button, form, input {
+    margin: 0;
+  }
+}
+

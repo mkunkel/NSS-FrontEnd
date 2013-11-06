@@ -1,0 +1,40 @@
+table#todos
+  thead
+    tr
+      th
+      th Title
+      th Due Date
+      th Priority
+      th
+  tbody
+    each todo in todos
+      if !todo.completed
+        tr(style= 'background-color: #{todo.priority.color}')
+
+          td
+            form.updateTodo(action='/todos/#{todo.id}', method='POST')
+              input(type= 'hidden', name= '_method', value= 'PUT')
+              input.chk(type= 'checkbox')
+          td= todo.title
+          td= moment(todo.dueDate).format('dddd, MMMM Do YYYY')
+          td= todo.priority.name
+          td
+            form.deleteTodo(action='/todos/#{todo.id}', method='POST')
+              input(type= 'hidden', name= '_method', value= 'DELETE')
+              button.button.tiny.alert.radius(type= 'Submit') Delete
+
+      else
+        tr.completed(style= 'background-color: #{todo.priority.color}')
+
+          td
+            form.updateTodo(action='/todos/#{todo.id}', method='POST')
+              input(type= 'hidden', name= '_method', value= 'PUT')
+              input.chk(type= 'checkbox', checked= 'checked')
+          td= todo.title
+          td= moment(todo.dueDate).format('dddd, MMMM Do YYYY')
+          td= todo.priority.name
+          td
+            form.deleteTodo(action='/todos/#{todo.id}', method='POST')
+              input(type= 'hidden', name= '_method', value= 'DELETE')
+              button.button.tiny.alert.radius(type= 'Submit') Delete
+

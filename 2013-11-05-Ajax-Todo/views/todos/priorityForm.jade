@@ -1,0 +1,11 @@
+form#priority(action='/priorities', method='POST')
+  fieldset
+    legend New Priority
+    .row
+      mixin field(6, 'name', 'Name', null, null, true)
+      .small-6.columns
+        label(for='color') Color
+        input(type='text', name='color', value= '', placeholder= 'click here', class= 'color {required: false, hash: true}')
+    .row
+      .small-3.small-offset-9.columns
+        button.radius.success.tiny.expand(type='submit') Save

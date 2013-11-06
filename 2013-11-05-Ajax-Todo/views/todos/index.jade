@@ -1,0 +1,18 @@
+extends ../template/layout
+include ../mixins/form-helper
+
+block content
+  .row
+    .small-12.columns
+      h1 Todo
+  .row
+    .small-2.columns
+      a.button.expand.tiny.radius(href='/') Home
+  .row
+    .small-5.columns
+      include priorityForm
+    .small-7.columns
+      include todoForm
+  .row
+    .small-12.columns
+      include todoTable
