@@ -1,0 +1,40 @@
+@base: darkgreen;
+
+body{
+  background-color: @base;
+}
+
+h1 {
+  color: darken(white, 20%);
+  text-shadow: 2px 2px 4px #222;
+}
+
+fieldset {
+  padding-top: 10px;
+  padding-bottom: 0;
+  border-radius: 10px;
+  background-color: tan;
+  border: 2px solid white;
+  legend {
+    background-color: tan;
+    border-radius: 6px;
+    border: 2px solid white;
+  }
+}
+
+#newGame {
+  height: 31px;
+}
+
+#cups {
+  display: none;
+  width: 390px;
+  margin: auto;
+  .cup {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    background-color: white;
+    float: left;
+  }
+}

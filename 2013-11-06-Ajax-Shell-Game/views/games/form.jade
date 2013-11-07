@@ -1,0 +1,7 @@
+form#game(action='/games/start', method='POST')
+  fieldset
+    legend New Game
+    .small-8.columns
+      input(type='text', name='player', placeholder= 'Name' autofocus)
+    .small-4.columns
+      button#newGame.tiny.radius.expand.success(type='submit') New Game

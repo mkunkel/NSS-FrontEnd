@@ -1,0 +1,11 @@
+extends ../template/layout
+
+block content
+  .row
+    .small-6.columns
+      h1 Shell Game
+    .small-6.columns
+      include form
+  .row#cups
+    each cup in [0, 1, 2]
+      .cup(data-position= cup)
