@@ -1,0 +1,15 @@
+form#todoForm(action='', method='POST')
+  fieldset
+    legend New Todo
+    .row
+      mixin field(12, 'text', 'title', 'Title')
+    .row
+      mixin field(6, 'text', 'category', 'Category')
+      mixin field(6, 'text', 'dueDate', 'Due Date')
+    .row
+      .small-2.small-offset-10.columns
+        a.button.tiny.radius.expand#create(href='#') Create
+
+
+
+        //- field(colSize, type, name, text, value, placeholder, autofocus)

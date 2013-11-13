@@ -1,0 +1,15 @@
+form#authentication.hidden(action='', method='POST')
+  fieldset
+    legend New Todo
+    .row
+      mixin field(6, 'text', 'email', 'Email')
+      mixin field(6, 'password', 'password', 'Password')
+    .row
+      .small-6.columns
+        #err
+      .small-3.small-offset-6.columns
+        button.radius.tiny.expand#register Register
+      .small-3.columns
+        button.radius.tiny.expand#login Log In
+
+        //- field(colSize, type, name, text, value, placeholder, autofocus)

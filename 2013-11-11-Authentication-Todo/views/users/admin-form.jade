@@ -1,0 +1,34 @@
+table
+  thead
+    tr
+      th Users
+      th Is Admin
+      th
+  tbody
+    for user in users
+      tr
+        td= user.email
+        td
+          if user.isAdmin
+            input.isAdmin(type='checkbox', value= user._id, checked)
+          else
+            input.isAdmin(type='checkbox', value= user._id)
+        td
+          a.button.alert.tiny.radius.delete(href='#', value= user._id) Delete
+
+
+//- form#authentication.hidden(action='', method='POST')
+//-   fieldset
+//-     legend Users
+//-     .row
+//-       mixin field(6, 'text', 'email', 'Email')
+//-       mixin field(6, 'password', 'password', 'Password')
+//-     .row
+//-       .small-6.columns
+//-         #err
+//-       .small-3.small-offset-6.columns
+//-         button.radius.tiny.expand#register Register
+//-       .small-3.columns
+//-         button.radius.tiny.expand#login Log In
+
+//-         //- field(colSize, type, name, text, value, placeholder, autofocus)
